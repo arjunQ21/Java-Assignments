@@ -8,6 +8,18 @@ Code Example:
 
       interface TestInterface{
         default void test(){
-          System.out.println("Test method from test interface.") ;
+            System.out.println("Test method from test interface.") ;
         }
+        public void test2();
       }
+      
+      
+      class TestClass implements TestInterface{
+            public void test2(){
+                  System.out.println("Test2 method from test class.") ;
+            }
+      }
+      
+      
+In this case, the class TestClass does not need to be an abstract class for not defining the test() method from TestInterface.      
+      
