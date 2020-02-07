@@ -18,7 +18,7 @@ The interitance of classes allow extending from a single class, whereas in case 
       void c() ;
     }
     
-    class TestClass extends intC{
+    class TestClass implements intC{
       void a(){
         System.out.println("From a() method in TestClass.") ;
       }
