@@ -21,3 +21,24 @@ An interface declared inside another interface or class is known as nested inter
                     ...
                 }
             }
+            
+Using Nested Interface
+
+                class A{
+                        interface Sendable{
+                                default void send(){
+                                        System.out.println("Default send() method of A.Sendable interface.") ;
+                                }
+                        }
+                }
+                
+                class B implements A.Sendable{
+                        public static void main(String[] args){
+                                B obj = new B() ;
+                                obj.send() ;
+                        }
+                }
+                
+                //Output: Default send() method of A.Sendable interface.
+                
+                
