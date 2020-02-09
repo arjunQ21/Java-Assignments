@@ -19,10 +19,10 @@ The interitance of classes allow extending from a single class, whereas in case 
     }
     
     class TestClass implements intC{
-      void a(){
+      public void a(){
         System.out.println("From a() method in TestClass.") ;
       }
-      void c(){
+      public void c(){
         System.out.println("From c() method in TestClass.") ;
       }
       
