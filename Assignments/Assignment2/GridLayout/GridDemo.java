@@ -9,7 +9,7 @@ class GridDemo{
 			button = new Button("Button " + i++) ;
 			f.add(button) ;
 		}
-		f.setLayout(new GridLayout(3, 3));
+		f.setLayout(new GridLayout(3, 3, 20, 20));
 		f.setSize(400, 400) ;
 		f.setVisible(true) ;
 	}
